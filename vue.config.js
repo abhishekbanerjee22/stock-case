@@ -1,5 +1,21 @@
 module.exports = {
-  "transpileDependencies": [
-    "vuetify"
-  ]
-}
+  configureWebpack: {
+    module: {
+      rules: [
+        {
+          test: /\.css$/,
+          use: [
+            {
+              loader: "postcss-loader",
+              options: {
+                config: {
+                  path: "./config"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+};

@@ -1,30 +1,27 @@
 <template>
-  <v-app>
-    <div class="main-wrap">
-      <login-modal></login-modal>
-      <router-view></router-view>
-    </div>
-  </v-app>
+  <div class="font-body">
+    <StNav />
+    <router-view></router-view>
+  </div>
 </template>
 
 <script>
-import loginModal from './globals/LoginModal.vue'
-
+import StNav from "@/components/common/Nav";
+import { mapActions } from "vuex";
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    loginModal,
+    StNav
+  },
+  methods: {
+    ...mapActions("user", ["getUserInfo"])
+  },
+  mounted() {
+    this.getUserInfo();
   },
 
   data: () => ({
     //
-  }),
+  })
 };
 </script>
-
-<style>
-  .main-wrap {
-    margin: -8px;
-  }
-
-</style>

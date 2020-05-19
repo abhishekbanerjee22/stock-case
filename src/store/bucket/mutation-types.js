@@ -1,0 +1,6 @@
+export const SET_STOCK_LIST = "[BUCKET] SET_STOCK_LIST";
+export const ADD_STOCK = "[BUCKET] ADD_STOCK";
+export const UPDATE_STOCK_PRICE = "[BUCKET] UPDATE_STOCK_PRICE";
+
+// export const SET_STOCK_LIST = "[BUCKET] SET_STOCK_LIST";
+// export const SET_STOCK_LIST = "[BUCKET] SET_STOCK_LIST";

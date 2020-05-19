@@ -1,0 +1,6 @@
+export const SET_USER = "[USER] SET_USER";
+export const SET_LOADER = "[USER] SET_LOADER";
+export const SET_ERROR = "[USER] SET_ERROR";
+export const SET_LOGIN_STATUS = "[USER] SET_LOGIN_SUCCESS";
+export const SET_SIGNUP_STATUS = "[USER] SET_SIGNUP_SUCCESS";
+export const CLEAR_FORM_DATA = "[USER] CLEAR_FORM_DATA";
